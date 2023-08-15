@@ -1,0 +1,18 @@
+{
+  "name": "protobuf-aws-pub-sub",
+  "version": "0.0.1",
+  "description": "A simple set of sample code which connects to an AWS IoT Broker and sends a message formatted in ProtoBuf.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js --endpoint 'av2doi16yktzo-ats.iot.us-east-1.amazonaws.com' --cert 'C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\certificate.pem' --key 'C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\private.key' --count 5 --topic hellokoster --message Hello",
+    "start-proto": "node src/index.js --endpoint 'av2doi16yktzo-ats.iot.us-east-1.amazonaws.com' --cert 'C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\certificate.pem' --key 'C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\private.key' --count 5 --topic hellokoster --message_type proto"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-crt": "^1.17.1",
+    "aws-iot-device-sdk-v2": "^1.15.0",
+    "protobufjs": "^7.2.4",
+    "yargs": "^16.2.0"
+  }
+}

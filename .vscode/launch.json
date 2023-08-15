@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Current File ProtoBuf",
+            "program": "${file}",
+            "args": [
+                "--endpoint",
+                "av2doi16yktzo-ats.iot.us-east-1.amazonaws.com",
+                "--cert",
+                "C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\certificate.pem",
+                "--key",
+                "C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\private.key",
+                "--count",
+                "5",
+                "--topic",
+                "hellokoster",
+                "--message_type",
+                "proto"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "TS-Node: Current File",
+            "runtimeArgs": [
+                "-r",
+                // This path must point directly to an installation of ts-node, which can be anywhere,
+                // global, local, in a folder on your desk, etc
+                "${workspaceFolder}/ts/node_modules/ts-node/register"
+            ],
+            "args": [
+                "${file}"
+            ]
+        }
+    ]
+}
