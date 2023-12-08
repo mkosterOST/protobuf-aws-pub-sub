@@ -4,8 +4,8 @@
   "description": "A simple set of sample code which connects to an AWS IoT Broker and sends a message formatted in ProtoBuf.",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js --endpoint 'av2doi16yktzo-ats.iot.us-east-1.amazonaws.com' --cert 'C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\certificate.pem' --key 'C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\private.key' --count 5 --topic hellokoster --message Hello",
-    "start-proto": "node src/index.js --endpoint 'av2doi16yktzo-ats.iot.us-east-1.amazonaws.com' --cert 'C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\certificate.pem' --key 'C:\\Code\\Personal\\protobuf-aws-pub-sub\\certs\\private.key' --count 5 --topic hellokoster --message_type proto"
+    "start": "node src/index.js --endpoint 'av2doi16yktzo-ats.iot.us-east-1.amazonaws.com' --cert 'C:\\Code\\Personal\\example-protobuf-aws-pub-sub\\certs\\certificate.pem' --key 'C:\\Code\\Personal\\example-protobuf-aws-pub-sub\\certs\\private.key' --count 1 --topic hellokoster --message Hello",
+    "start-proto": "node src/index.js --endpoint 'av2doi16yktzo-ats.iot.us-east-1.amazonaws.com' --cert 'C:\\Code\\Personal\\example-protobuf-aws-pub-sub\\certs\\certificate.pem' --key 'C:\\Code\\Personal\\example-protobuf-aws-pub-sub\\certs\\private.key' --count 1 --topic hellokoster --message_type proto"
   },
   "author": "",
   "license": "ISC",
